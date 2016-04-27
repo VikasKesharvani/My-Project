@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+
+   >
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@drawable/search_box"
+
+       >
+    <TextView
+        android:id="@+id/source_name_lable"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Name :"
+        android:textSize="24sp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/source_name"
+        android:layout_below="@+id/source_name_lable"
+         android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Name"
+
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/location_icon"
+        android:layout_below="@+id/source_name"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/source_name"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_place_black_24dp"/>
+    <TextView
+        android:id="@+id/latlong"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="14555757"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/location_icon"
+        android:layout_alignRight="@+id/source_name"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/source_name_2_lable"
+        android:layout_below="@+id/latlong"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dest Name :"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/source_name_2"
+        android:layout_below="@+id/source_name_2_lable"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source Name"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/location_icon_2"
+        android:layout_below="@+id/source_name_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/source_name"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_place_black_24dp"/>
+    <TextView
+        android:id="@+id/latlong_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14555757"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@+id/location_icon_2"
+        android:layout_alignRight="@+id/source_name_2"
+        android:textSize="18sp"
+        />
+        <TextView
+            android:id="@+id/distance"
+           android:layout_below="@+id/latlong_2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="135 km"
+
+            android:textSize="24sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/cancel_icon"
+        android:adjustViewBounds="true"
+android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+       android:src="@drawable/ic_cancel_black_24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UnknownId" />
+</RelativeLayout>
